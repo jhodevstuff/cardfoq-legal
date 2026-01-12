@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardfoq - Support</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #fff;
+        }
+        h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+        h2 { font-size: 20px; font-weight: 600; margin: 40px 0 16px; color: #1d1d1f; }
+        h3 { font-size: 16px; font-weight: 600; margin: 24px 0 12px; }
+        p { margin-bottom: 16px; color: #424245; }
+        ul, ol { margin: 16px 0; padding-left: 24px; }
+        li { margin-bottom: 8px; color: #424245; }
+        .subtitle { color: #86868b; font-size: 17px; margin-bottom: 40px; }
+        .card { background: #f5f5f7; padding: 24px; border-radius: 16px; margin: 24px 0; }
+        .card h3 { margin-top: 0; }
+        hr { border: none; border-top: 1px solid #e5e5e5; margin: 40px 0; }
+        .footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #e5e5e5; color: #86868b; font-size: 14px; text-align: center; }
+        a { color: #06c; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .faq-item { margin-bottom: 24px; }
+        .faq-item strong { display: block; margin-bottom: 8px; color: #1d1d1f; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin: 24px 0; }
+        .lang-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+        }
+        .lang-btn {
+            padding: 6px 12px;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            background: #fff;
+            color: #424245;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .lang-btn:hover {
+            border-color: #06c;
+            color: #06c;
+        }
+        .lang-btn.active {
+            background: #06c;
+            color: #fff;
+            border-color: #06c;
+        }
+        .lang-content { display: none; }
+        .lang-content.active { display: block; }
+        .header-container { position: relative; }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="lang-switcher">
+            <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+            <button class="lang-btn" onclick="setLanguage('de')">DE</button>
+        </div>
+    </div>
+
+    <!-- English Content -->
+    <div id="content-en" class="lang-content active">
+        <h1>Cardfoq Support</h1>
+        <p class="subtitle">Learn effectively with flashcards</p>
+
+        <h2>Getting Started</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Create Folder</h3>
+                <ol>
+                    <li>Open Cardfoq</li>
+                    <li>Tap the + icon</li>
+                    <li>Enter a name</li>
+                    <li>Choose a color</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h3>Create Stack</h3>
+                <ol>
+                    <li>Open a folder</li>
+                    <li>Tap the + icon</li>
+                    <li>Enter a name</li>
+                    <li>Choose a color</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h3>Create Cards</h3>
+                <ol>
+                    <li>Open a stack</li>
+                    <li>Tap the + icon</li>
+                    <li>Enter question and answer</li>
+                    <li>Optional: Add images</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h3>Start Learning</h3>
+                <ol>
+                    <li>Open a stack</li>
+                    <li>Tap "Start Learning"</li>
+                    <li>Swipe or tap to flip</li>
+                    <li>Rate your knowledge (Red/Yellow/Green)</li>
+                </ol>
+            </div>
+        </div>
+
+        <h2>Features</h2>
+
+        <h3>Learning Mode</h3>
+        <p>Go through your flashcards and rate your knowledge:</p>
+        <ul>
+            <li><strong>Red:</strong> Didn't know</li>
+            <li><strong>Yellow:</strong> Partially knew</li>
+            <li><strong>Green:</strong> Knew it</li>
+        </ul>
+        <p>Progress is saved so you can continue later.</p>
+
+        <h3>iCloud Sync</h3>
+        <p>Your flashcards are automatically synced between your Apple devices. You can disable this in settings.</p>
+
+        <h3>Import &amp; Export</h3>
+        <p>Share stacks with others or back them up:</p>
+        <ul>
+            <li><strong>Export:</strong> Long press on a stack > Export</li>
+            <li><strong>Import:</strong> Open a .cardfoq file or import in the app</li>
+        </ul>
+
+        <h3>Statistics</h3>
+        <p>Track your learning progress with detailed statistics per stack and overall.</p>
+
+        <hr>
+
+        <h2>Settings</h2>
+
+        <div class="card">
+            <h3>Appearance</h3>
+            <ul>
+                <li><strong>Theme:</strong> System, Light, or Dark</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Learning</h3>
+            <ul>
+                <li><strong>Haptic Feedback:</strong> Vibration on actions</li>
+                <li><strong>Auto-advance after rating:</strong> Automatically moves to next card</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Sync</h3>
+            <ul>
+                <li><strong>iCloud Sync:</strong> Enable/disable synchronization</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>Troubleshooting</h2>
+
+        <div class="faq-item">
+            <strong>Data not syncing</strong>
+            <p>Make sure iCloud sync is enabled in settings. Also check if iCloud is enabled for Cardfoq in iOS Settings.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Can't add images</strong>
+            <p>Grant Cardfoq access to your photo library in iOS Settings > Cardfoq > Photos.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>App crashes</strong>
+            <p>Try closing and reopening the app. If the problem persists, reinstall the app.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Can't open .cardfoq files</strong>
+            <p>Make sure Cardfoq is installed. Open the file from the Files app or tap "Share" and choose Cardfoq.</p>
+        </div>
+
+        <hr>
+
+        <h2>FAQ</h2>
+
+        <div class="faq-item">
+            <strong>Where is my data stored?</strong>
+            <p>All data is stored locally on your device. With iCloud sync enabled, also in your private iCloud account.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Is my data uploaded?</strong>
+            <p>Only with iCloud sync enabled, and only to your own iCloud account. We have no access to your data.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Can I use Cardfoq offline?</strong>
+            <p>Yes! Cardfoq works fully offline. iCloud sync happens automatically when you're back online.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>How do I delete my data?</strong>
+            <p>Uninstall the app to delete all local data. For iCloud data: iOS Settings > [Your Name] > iCloud > Manage Storage.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Is Cardfoq free?</strong>
+            <p>Yes, Cardfoq is completely free and contains no ads or in-app purchases.</p>
+        </div>
+
+        <hr>
+
+        <h2>Permissions</h2>
+
+        <ul>
+            <li><strong>Photo Library (Optional):</strong> To add images to flashcards</li>
+            <li><strong>iCloud (Optional):</strong> For sync between devices</li>
+        </ul>
+
+        <hr>
+
+        <h2>Device Compatibility</h2>
+        <p><strong>Requires:</strong> iPhone with iOS 17.0 or later</p>
+
+        <hr>
+
+        <h2>Contact</h2>
+        <p>For further help or feedback:</p>
+        <p><a href="mailto:cardfoq@joshua-hoffmann.de">cardfoq@joshua-hoffmann.de</a></p>
+        <p>Response time: Usually within 48 hours.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a></p>
+
+        <div class="footer">
+            <p><strong>Cardfoq</strong></p>
+            <p>Developed by Joshua Hoffmann</p>
+            <p style="margin-top: 16px;">Thank you for using Cardfoq!</p>
+        </div>
+    </div>
+
+    <!-- German Content -->
+    <div id="content-de" class="lang-content">
+        <h1>Cardfoq Support</h1>
+        <p class="subtitle">Effektiv lernen mit Karteikarten</p>
+
+        <h2>Erste Schritte</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Ordner erstellen</h3>
+                <ol>
+                    <li>&Ouml;ffne Cardfoq</li>
+                    <li>Tippe auf das + Symbol</li>
+                    <li>Gib einen Namen ein</li>
+                    <li>W&auml;hle eine Farbe</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h3>Stapel erstellen</h3>
+                <ol>
+                    <li>&Ouml;ffne einen Ordner</li>
+                    <li>Tippe auf das + Symbol</li>
+                    <li>Gib einen Namen ein</li>
+                    <li>W&auml;hle eine Farbe</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h3>Karten erstellen</h3>
+                <ol>
+                    <li>&Ouml;ffne einen Stapel</li>
+                    <li>Tippe auf das + Symbol</li>
+                    <li>Gib Frage und Antwort ein</li>
+                    <li>Optional: F&uuml;ge Bilder hinzu</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h3>Lernen starten</h3>
+                <ol>
+                    <li>&Ouml;ffne einen Stapel</li>
+                    <li>Tippe auf "Lernen starten"</li>
+                    <li>Wische oder tippe zum Umdrehen</li>
+                    <li>Bewerte dein Wissen (Rot/Gelb/Gr&uuml;n)</li>
+                </ol>
+            </div>
+        </div>
+
+        <h2>Funktionen</h2>
+
+        <h3>Lernmodus</h3>
+        <p>Gehe durch deine Karteikarten und bewerte dein Wissen:</p>
+        <ul>
+            <li><strong>Rot:</strong> Noch nicht gewusst</li>
+            <li><strong>Gelb:</strong> Teilweise gewusst</li>
+            <li><strong>Gr&uuml;n:</strong> Gewusst</li>
+        </ul>
+        <p>Der Fortschritt wird gespeichert, sodass du sp&auml;ter weitermachen kannst.</p>
+
+        <h3>iCloud-Synchronisation</h3>
+        <p>Deine Karteikarten werden automatisch zwischen deinen Apple-Ger&auml;ten synchronisiert. Du kannst dies in den Einstellungen deaktivieren.</p>
+
+        <h3>Import &amp; Export</h3>
+        <p>Teile Stapel mit anderen oder sichere sie:</p>
+        <ul>
+            <li><strong>Exportieren:</strong> Lange auf einen Stapel dr&uuml;cken &gt; Exportieren</li>
+            <li><strong>Importieren:</strong> .cardfoq-Datei &ouml;ffnen oder in der App importieren</li>
+        </ul>
+
+        <h3>Statistiken</h3>
+        <p>Verfolge deinen Lernfortschritt mit detaillierten Statistiken pro Stapel und insgesamt.</p>
+
+        <hr>
+
+        <h2>Einstellungen</h2>
+
+        <div class="card">
+            <h3>Erscheinungsbild</h3>
+            <ul>
+                <li><strong>Design:</strong> System, Hell oder Dunkel</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Lernen</h3>
+            <ul>
+                <li><strong>Haptisches Feedback:</strong> Vibration bei Aktionen</li>
+                <li><strong>Nach Bewertung automatisch weiter:</strong> Springt automatisch zur n&auml;chsten Karte</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Synchronisation</h3>
+            <ul>
+                <li><strong>iCloud-Sync:</strong> Aktivieren/Deaktivieren der Synchronisation</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>Probleml&ouml;sung</h2>
+
+        <div class="faq-item">
+            <strong>Daten werden nicht synchronisiert</strong>
+            <p>Stelle sicher, dass iCloud-Sync in den Einstellungen aktiviert ist. Pr&uuml;fe auch, ob iCloud in den iOS-Einstellungen f&uuml;r Cardfoq aktiviert ist.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Bilder k&ouml;nnen nicht hinzugef&uuml;gt werden</strong>
+            <p>Erteile Cardfoq Zugriff auf deine Fotobibliothek in iOS Einstellungen &gt; Cardfoq &gt; Fotos.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>App st&uuml;rzt ab</strong>
+            <p>Versuche die App zu schlie&szlig;en und neu zu &ouml;ffnen. Falls das Problem weiterhin besteht, installiere die App neu.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>.cardfoq-Dateien k&ouml;nnen nicht ge&ouml;ffnet werden</strong>
+            <p>Stelle sicher, dass Cardfoq installiert ist. &Ouml;ffne die Datei aus der Dateien-App oder tippe auf "Teilen" und w&auml;hle Cardfoq.</p>
+        </div>
+
+        <hr>
+
+        <h2>H&auml;ufige Fragen</h2>
+
+        <div class="faq-item">
+            <strong>Wo werden meine Daten gespeichert?</strong>
+            <p>Alle Daten werden lokal auf deinem Ger&auml;t gespeichert. Bei aktivierter iCloud-Sync auch in deinem privaten iCloud-Account.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Werden meine Daten hochgeladen?</strong>
+            <p>Nur bei aktivierter iCloud-Sync, und nur in deinen eigenen iCloud-Account. Wir haben keinen Zugriff auf deine Daten.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Kann ich Cardfoq offline nutzen?</strong>
+            <p>Ja! Cardfoq funktioniert vollst&auml;ndig offline. iCloud-Sync erfolgt automatisch, sobald du wieder online bist.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Wie l&ouml;sche ich meine Daten?</strong>
+            <p>Deinstalliere die App, um alle lokalen Daten zu l&ouml;schen. F&uuml;r iCloud-Daten: iOS Einstellungen &gt; [Dein Name] &gt; iCloud &gt; Speicher verwalten.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Ist Cardfoq kostenlos?</strong>
+            <p>Ja, Cardfoq ist vollst&auml;ndig kostenlos und enth&auml;lt keine Werbung oder In-App-K&auml;ufe.</p>
+        </div>
+
+        <hr>
+
+        <h2>Berechtigungen</h2>
+
+        <ul>
+            <li><strong>Fotobibliothek (Optional):</strong> Um Bilder zu Karteikarten hinzuzuf&uuml;gen</li>
+            <li><strong>iCloud (Optional):</strong> F&uuml;r Synchronisation zwischen Ger&auml;ten</li>
+        </ul>
+
+        <hr>
+
+        <h2>Ger&auml;tekompatibilit&auml;t</h2>
+        <p><strong>Erfordert:</strong> iPhone mit iOS 17.0 oder neuer</p>
+
+        <hr>
+
+        <h2>Kontakt</h2>
+        <p>F&uuml;r weitere Hilfe oder Feedback:</p>
+        <p><a href="mailto:cardfoq@joshua-hoffmann.de">cardfoq@joshua-hoffmann.de</a></p>
+        <p>Antwortzeit: In der Regel innerhalb von 48 Stunden.</p>
+        <p><a href="privacy-policy.html">Datenschutzerkl&auml;rung</a></p>
+
+        <div class="footer">
+            <p><strong>Cardfoq</strong></p>
+            <p>Entwickelt von Joshua Hoffmann</p>
+            <p style="margin-top: 16px;">Danke, dass du Cardfoq nutzt!</p>
+        </div>
+    </div>
+
+    <script>
+        function setLanguage(lang) {
+            document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('content-' + lang).classList.add('active');
+            document.querySelector('.lang-btn[onclick="setLanguage(\'' + lang + '\')"]').classList.add('active');
+            document.documentElement.lang = lang === 'de' ? 'de' : 'en';
+            localStorage.setItem('cardfoq-lang', lang);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('cardfoq-lang');
+            if (savedLang) {
+                setLanguage(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>
